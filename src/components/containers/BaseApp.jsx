@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   AppBar,
   Avatar,
@@ -16,31 +16,31 @@ import {
   ListItemText,
   ListSubheader,
   Divider,
-} from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
-import { AccountBox } from '@material-ui/icons';
-import { makeStyles } from '@material-ui/core/styles';
+} from "@material-ui/core";
+import MenuIcon from "@material-ui/icons/Menu";
+import { AccountBox } from "@material-ui/icons";
+import { makeStyles } from "@material-ui/core/styles";
 // import { NavLink, useLocation } from 'react-router-dom';
 
 // import NotFound from './NotFound';
 // import { lookupTabNumByPath } from '../utils/tabHelper';
 
-import logo from '../../images/RLL_logo.png';
+import logo from "../../images/FRLLL_logo.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
-    '& > *': {
+    display: "flex",
+    "& > *": {
       margin: theme.spacing(1),
     },
   },
   mainContentOffset: theme.mixins.toolbar,
   mainContent: {
     // hide scrollbars but still allow scrolling
-    overflow: 'scroll',
-    scrollbarWidth: 'none', /* Firefox */
-    '&::-webkit-scrollbar': { /* WebKit */
-      width: 0,
+    overflow: "scroll",
+    scrollbarWidth: "none" /* Firefox */,
+    "&::-webkit-scrollbar": {
+      /* WebKit */ width: 0,
       height: 0,
     },
   },
@@ -54,10 +54,10 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(1),
   },
   mainTitle: {
-    fontFamily: 'Oswald',
-    textShadow: '1px 1px 2px black',
+    fontFamily: "Oswald",
+    textShadow: "1px 1px 2px black",
     marginTop: -theme.spacing(0.5),
-    fontVariant: 'small-caps',
+    fontVariant: "small-caps",
   },
   drawerHeader: {
     backgroundColor: theme.palette.primary.main,
@@ -73,7 +73,7 @@ const useStyles = makeStyles((theme) => ({
 export default function BaseApp(props) {
   const { children } = props;
   const classes = useStyles();
-  
+
   const [navOpen, setNavOpen] = useState(false);
   // const [auth, setAuth] = React.useState(true);
   // const [anchorEl, setAnchorEl] = React.useState(null);
@@ -90,7 +90,7 @@ export default function BaseApp(props) {
   // const handleClose = () => {
   //   setAnchorEl(null);
   // };
-  
+
   return (
     <>
       <AppBar position="sticky">
@@ -126,7 +126,7 @@ export default function BaseApp(props) {
                     </ListItemIcon>
                     <ListItemText>
                       <Typography variant="h5" className={classes.mainTitle}>
-                        RLL
+                        FRLLL
                       </Typography>
                     </ListItemText>
                     <ListItemIcon>
@@ -139,8 +139,12 @@ export default function BaseApp(props) {
             </SwipeableDrawer>
           </React.Fragment>
           <Avatar src={logo} className={classes.mainLogo} />
-          <Typography variant="h4" color="secondary" className={classes.mainTitle}>
-            Rocket League League
+          <Typography
+            variant="h4"
+            color="secondary"
+            className={classes.mainTitle}
+          >
+            Fantasy RLL League
           </Typography>
           {/* <IconButton
             aria-label="account of current user"

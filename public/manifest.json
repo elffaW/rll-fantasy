@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App with Redux and PWA template",
+  "short_name": "FRLLL",
+  "name": "Fantasy RLL League",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,18 +8,18 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "FRLLL_logo.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "FRLLL_logo.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#d32f2f",
+  "background_color": "#e0e0e0"
 }
